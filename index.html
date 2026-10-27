@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MERIYA THOMAS RE-EDIT12</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-living-1">
+        <li class="text">LIVING 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-living-2">
+        <li class="text">LIVING 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-prayer-area">
+        <li class="text">PRAYER AREA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-dining-1">
+        <li class="text">DINING 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-dining-2">
+        <li class="text">DINING 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-wash-area">
+        <li class="text">WASH AREA</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-family-living-1">
+        <li class="text">FAMILY LIVING 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-family-living-2">
+        <li class="text">FAMILY LIVING 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-courtyard-1">
+        <li class="text">COURTYARD 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-courtyard-2">
+        <li class="text">COURTYARD 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-kitchen-1">
+        <li class="text">KITCHEN 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-kitchen-2">
+        <li class="text">KITCHEN 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-kitchen-3">
+        <li class="text">KITCHEN 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-work-area-1">
+        <li class="text">WORK AREA 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-work-area-2">
+        <li class="text">WORK AREA 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-bedroom-1">
+        <li class="text">BEDROOM 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-bedroom-12">
+        <li class="text">BEDROOM 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-bedroom-13">
+        <li class="text">BEDROOM 1.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-toilet-1">
+        <li class="text">TOILET 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-toilet-12">
+        <li class="text">TOILET 1.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-bedroom-2">
+        <li class="text">BEDROOM 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-bedroom-22">
+        <li class="text">BEDROOM 2.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-bedroom-23">
+        <li class="text">BEDROOM 2.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-toilet-2">
+        <li class="text">TOILET 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-toilet-22">
+        <li class="text">TOILET 2.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-bedroom-3">
+        <li class="text">BEDROOM 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-bedroom-32">
+        <li class="text">BEDROOM 3.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-toilet-3">
+        <li class="text">TOILET 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-toilet-32">
+        <li class="text">TOILET 3.2</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
